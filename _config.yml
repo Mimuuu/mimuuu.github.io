@@ -1,0 +1,17 @@
+# Site settings
+title: "Brice"
+header-img: "img/home.jpg"
+email: "brice.bernard@protonmail.com"
+description: "I am a front-end developer who loves design."
+baseurl: ""
+url: "https://mimuuu.github.io"
+twitter_username: "mimuuu_"
+github_username:  "Mimuuu"
+facebook_username:
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
