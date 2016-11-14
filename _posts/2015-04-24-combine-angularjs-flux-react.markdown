@@ -13,7 +13,7 @@ In this post, I'll assume you know the basics of AngularJS, React and the Flux a
 
 **Flux** comes with a "Dispatcher" that will handle the discussion between the views (what the user sees and interact with) and the stores (where the logic is), through events.
 
-#Why combine those 3 together?
+# Why combine those 3 together?
 
 Well, a mix of things.
 
@@ -26,7 +26,7 @@ You'll **replace the 2-way data bindings with the Flux architecture**. Instead o
 There is one drawback though, you will have to load the whole AngularJS framework to only use little parts of it. Parts that probably could be replaced with micro frameworks to lighter the initial load of your page. However I'm sure there are some use to it, at least we had one. :)
 
 
-#How to combine them?
+# How to combine them?
 
 First of all, I want to say that there was already a popular directive to combine AngularJS and React called [ngReact](https://davidchang.github.io/ngReact/docs/ngReact.html). I basically use the exact same code, except I chose to go with Flux and remove every watchers, where [ngReact](https://davidchang.github.io/ngReact/docs/ngReact.html) still watches values that might change.
 
@@ -37,7 +37,7 @@ Basically, the application will look like this (a simple example will follow to 
   * These **directives will not have template**, the react component will serve as template
 
   
-#A list of images with React and AngularJS
+# A list of images with React and AngularJS
 
 Let's say we want a page that display a list of images with their title.
 
@@ -218,7 +218,7 @@ Notice the last line, you should write it **only** for components **associated w
 
 You can of course use more components. For example here, we could create an `Image` component, and passed the individual object to it.
 
-#An interactive list of images with Flux
+# An interactive list of images with Flux
 
 Let's say we want to delete the image if the user clicks on it.
 Let's take this opportunity to also do the Image component, as it would be easier to have simple component if you want to interact with it.
@@ -333,6 +333,6 @@ So now, when the user clicks on the image, the Dispatcher gets inform, send the 
 **/!\ Important**    
 Please pay attention to the last lines, we need to unregister the event when the directive is destroyed, otherwise if we come on the page again, the events will register once more and the code will be executed twice, and you probably don't want that.
 
-#Full code example
+# Full code example
 
 An example will soon be available here: [https://github.com/Mimuuu/Angular-React-Flux-example](https://github.com/Mimuuu/Angular-React-Flux-example)
