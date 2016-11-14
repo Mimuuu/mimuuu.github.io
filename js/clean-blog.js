@@ -5,7 +5,7 @@
  */
 
 // Tooltip Init
-/*$(function() {
+$(function() {
     $("[data-toggle='tooltip']").tooltip();
 });
 
@@ -13,7 +13,7 @@
 
 $(function() {
 
-    /*$("input,textarea").jqBootstrapValidation({
+    $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
@@ -31,7 +31,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "//formspree.io/brice.bernard1@gmail.com",
+                url: "//formspree.io/brice.bernard@protonmail.com",
                 type: "POST",
                 data: {
                     name: name,
@@ -54,7 +54,6 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
                 error: function(err) {
-			console.log(err);
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
