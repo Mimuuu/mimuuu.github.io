@@ -10,7 +10,7 @@ AngularJS is great, easy to use, somewhat easy to learn if you don't believe eve
 However it doesn't come without drawbacks, the biggest one being **performance**.
 With Angular 1.3 came the "bind once" syntax using the `::`syntax. This is great but sometimes you want to keep all of your bindings set because the values might change, and that can become an issue in long lists (for example an infinite scrolling `ng-repeat`).
 
-#How to remove / re-add watchers
+# How to remove / re-add watchers
 
 First, we need it to be transparent for the user. They need to be able to do whatever they want and don't feel any slowdown.
 
@@ -98,7 +98,7 @@ setElemWatchers(elem);
 
 
 
-#When to call all of this?
+# When to call all of this?
 
 We can disable and enable the watchers of an element, now we need to be able to do this everytime an element end up in or outside the viewport.
 
@@ -128,7 +128,7 @@ The first one on the parent element, the `ngRepeat`, to handle the scroll listen
 
 I also added a "range of error" of 1000 pixels, which means we consider the viewport to be the viewport itself + 1000 up and down so if an element is half visible it still works.
 
-#Full code
+# Full code
 
 You can find the full directives code below or [on github](https://github.com/Mimuuu/Disable-When-Hidden).
 
