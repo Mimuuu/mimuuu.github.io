@@ -5,7 +5,7 @@
  */
 
 // Tooltip Init
-$(function() {
+/*$(function() {
     $("[data-toggle='tooltip']").tooltip();
 });
 
